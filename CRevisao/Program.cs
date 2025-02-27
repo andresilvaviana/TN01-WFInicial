@@ -27,12 +27,6 @@
                 Console.WriteLine("Recuperação!");
             }
             */
-
-            Console.WriteLine("informe um numero:");
-            byte num = Convert.ToByte(Console.ReadLine());
-
-            switch
-
         }
     }
 }

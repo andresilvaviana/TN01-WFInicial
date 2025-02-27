@@ -1,8 +1,8 @@
 namespace WFInicial
 {
-    public partial class Form1 : Form
+    public partial class FormInicial : System.Windows.Forms.Form
     {
-        public Form1()
+        public FormInicial()
         {
             InitializeComponent();
 
@@ -28,6 +28,45 @@ namespace WFInicial
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            double nota1 = double.Parse(txtNota1.Text);
+            double nota2 = double.Parse(txtNota2.Text);
+
+            double media = (nota1 + nota2) / 2;
+
+            if (media >= 7)
+            {
+                MessageBox.Show(
+                    "Aprovado",
+                    "Ok",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+            else if (media < 5)
+            {
+                MessageBox.Show(
+                    "Reprovado",
+                    "Deu Ruim",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+            else
+            {
+                MessageBox.Show(
+                    "Recuperação",
+                    "Atenção!",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+               
+            }
         }
     }
 }
