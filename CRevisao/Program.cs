@@ -4,6 +4,8 @@
     {
         static void Main(string[] args)
         {
+            /*
+
             Console.WriteLine("informe a primera nota:");
             double nota1 = Convert.ToDouble(Console.ReadLine());
 
@@ -24,6 +26,13 @@
             {
                 Console.WriteLine("Recuperação!");
             }
+            */
+
+            Console.WriteLine("informe um numero:");
+            byte num = Convert.ToByte(Console.ReadLine());
+
+            switch
+
         }
     }
 }
