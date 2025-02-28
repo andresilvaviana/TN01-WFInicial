@@ -1,6 +1,6 @@
 ﻿namespace CRevisao
 {
-    internal class Program
+    internal class ConsoleCEx1
     {
         static void Main(string[] args)
         {

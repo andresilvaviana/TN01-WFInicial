@@ -28,18 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
+            lblDiaSemana = new Label();
+            txtDiaSemana = new TextBox();
+            btnEscolher = new Button();
             SuspendLayout();
+            // 
+            // lblDiaSemana
+            // 
+            lblDiaSemana.AutoSize = true;
+            lblDiaSemana.Font = new Font("Segoe UI", 9F);
+            lblDiaSemana.Location = new Point(32, 31);
+            lblDiaSemana.Name = "lblDiaSemana";
+            lblDiaSemana.Size = new Size(85, 15);
+            lblDiaSemana.TabIndex = 0;
+            lblDiaSemana.Text = "Dia da Semana";
+            // 
+            // txtDiaSemana
+            // 
+            txtDiaSemana.Location = new Point(123, 28);
+            txtDiaSemana.Name = "txtDiaSemana";
+            txtDiaSemana.Size = new Size(100, 23);
+            txtDiaSemana.TabIndex = 1;
+            // 
+            // btnEscolher
+            // 
+            btnEscolher.Location = new Point(229, 28);
+            btnEscolher.Name = "btnEscolher";
+            btnEscolher.Size = new Size(89, 26);
+            btnEscolher.TabIndex = 2;
+            btnEscolher.Text = "Escolher";
+            btnEscolher.UseVisualStyleBackColor = true;
+            btnEscolher.Click += btnEscolher_Click;
             // 
             // FormEx2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(459, 213);
+            ClientSize = new Size(449, 328);
+            Controls.Add(btnEscolher);
+            Controls.Add(txtDiaSemana);
+            Controls.Add(lblDiaSemana);
             Name = "FormEx2";
             Text = "FormEx2";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lblDiaSemana;
+        private TextBox txtDiaSemana;
+        private Button btnEscolher;
     }
 }

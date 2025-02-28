@@ -2,7 +2,7 @@
 
 namespace CEx2
 {
-    internal class Program
+    internal class ConsoleCEx2
     {
         static void Main(string[] args)
         {
@@ -14,7 +14,7 @@ _______________________________________
     4-Quarta-Feira
     5-Quinta-Feira
     6-Sexta-Feira
-    7-Sábado-Feira
+    7-Sábado
 _______________________________________
                             ";
             Console.WriteLine(menu);
@@ -41,7 +41,7 @@ _______________________________________
                     Console.WriteLine("Sexta-Feira");
                     break;
                 case 7:
-                    Console.WriteLine("Sábado-Feira");
+                    Console.WriteLine("Sábado");
                     break;
                 default:
                     Console.WriteLine("Dia Invalido");
