@@ -43,7 +43,7 @@ _______________________________________
                 case 7:
                     Console.WriteLine("Sábado-Feira");
                     break;
-                case 8:
+                default:
                     Console.WriteLine("Dia Invalido");
                     break;
 
