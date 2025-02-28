@@ -28,79 +28,86 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            button1 = new Button();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            label2 = new Label();
+            lbl_numero1 = new Label();
+            btn_Calcular = new Button();
+            txt_numero1 = new TextBox();
+            txt_numero2 = new TextBox();
+            lbl_numero2 = new Label();
             SuspendLayout();
             // 
-            // label1
+            // lbl_numero1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(45, 38);
-            label1.Name = "label1";
-            label1.Size = new Size(104, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Digite um numero";
-            label1.Click += label1_Click;
+            lbl_numero1.AutoSize = true;
+            lbl_numero1.BackColor = Color.White;
+            lbl_numero1.Location = new Point(200, 212);
+            lbl_numero1.Name = "lbl_numero1";
+            lbl_numero1.Size = new Size(60, 15);
+            lbl_numero1.TabIndex = 0;
+            lbl_numero1.Text = "Numero 1";
+            lbl_numero1.Click += label1_Click;
             // 
-            // button1
+            // btn_Calcular
             // 
-            button1.Location = new Point(166, 93);
-            button1.Name = "button1";
-            button1.Size = new Size(111, 23);
-            button1.TabIndex = 1;
-            button1.Text = "Calcular o Maior Numero";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btn_Calcular.Location = new Point(321, 267);
+            btn_Calcular.Name = "btn_Calcular";
+            btn_Calcular.Size = new Size(111, 23);
+            btn_Calcular.TabIndex = 1;
+            btn_Calcular.Text = "Calcular o Maior Numero";
+            btn_Calcular.UseVisualStyleBackColor = true;
+            btn_Calcular.Click += button1_Click;
             // 
-            // textBox1
+            // txt_numero1
             // 
-            textBox1.Location = new Point(166, 35);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 2;
+            txt_numero1.Location = new Point(321, 209);
+            txt_numero1.Name = "txt_numero1";
+            txt_numero1.Size = new Size(100, 23);
+            txt_numero1.TabIndex = 2;
             // 
-            // textBox2
+            // txt_numero2
             // 
-            textBox2.Location = new Point(166, 64);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 4;
-            textBox2.TextChanged += textBox2_TextChanged;
+            txt_numero2.Location = new Point(321, 238);
+            txt_numero2.Name = "txt_numero2";
+            txt_numero2.Size = new Size(100, 23);
+            txt_numero2.TabIndex = 4;
+            txt_numero2.TextChanged += textBox2_TextChanged;
             // 
-            // label2
+            // lbl_numero2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(45, 67);
-            label2.Name = "label2";
-            label2.Size = new Size(115, 15);
-            label2.TabIndex = 3;
-            label2.Text = "Digite outro numero";
+            lbl_numero2.AutoSize = true;
+            lbl_numero2.BackColor = SystemColors.ButtonFace;
+            lbl_numero2.FlatStyle = FlatStyle.System;
+            lbl_numero2.ForeColor = Color.Black;
+            lbl_numero2.Location = new Point(200, 241);
+            lbl_numero2.Name = "lbl_numero2";
+            lbl_numero2.Size = new Size(60, 15);
+            lbl_numero2.TabIndex = 3;
+            lbl_numero2.Text = "Numero 2";
             // 
             // FormEx3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(textBox2);
-            Controls.Add(label2);
-            Controls.Add(textBox1);
-            Controls.Add(button1);
-            Controls.Add(label1);
+            BackColor = SystemColors.ActiveCaption;
+            BackgroundImage = Properties.Resources.Become_Disney_Style_Character_A1_art_;
+            ClientSize = new Size(610, 568);
+            Controls.Add(txt_numero2);
+            Controls.Add(lbl_numero2);
+            Controls.Add(txt_numero1);
+            Controls.Add(btn_Calcular);
+            Controls.Add(lbl_numero1);
             Name = "FormEx3";
             Text = "FormEx3";
+            Load += FormEx3_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
-        private Button button1;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Label label2;
+        private Label lbl_numero1;
+        private Button btn_Calcular;
+        private TextBox txt_numero1;
+        private TextBox txt_numero2;
+        private Label lbl_numero2;
     }
 }

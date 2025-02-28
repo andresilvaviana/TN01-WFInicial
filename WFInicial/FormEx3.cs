@@ -29,11 +29,19 @@ namespace WFInicial
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int num1 = int.Parse(textBox1.Text);
-            int num2 = int.Parse(textBox2.Text);
+            int num1 = int.Parse(txt_numero1.Text);
+            int num2 = int.Parse(txt_numero2.Text);
             int maior = Math.Max(num1, num2);
+            string menssagem = $"0 numero {maior} é o mair numero!";
 
-            ($"\nO número {maior} é maior valor!");
+            MessageBox.Show(menssagem, "info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+        }
+
+        private void FormEx3_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
