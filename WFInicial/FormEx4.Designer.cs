@@ -46,6 +46,7 @@
             btn_Calcular.TabIndex = 0;
             btn_Calcular.Text = "Mostrar Maior";
             btn_Calcular.UseVisualStyleBackColor = true;
+            btn_Calcular.Click += btn_Calcular_Click;
             // 
             // lbl_numero1
             // 
@@ -98,7 +99,6 @@
             lbl_numero3.Size = new Size(60, 15);
             lbl_numero3.TabIndex = 6;
             lbl_numero3.Text = "Numero 3";
-            lbl_numero3.Click += this.label1_Click_1;
             // 
             // FormEx4
             // 

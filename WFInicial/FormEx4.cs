@@ -36,5 +36,20 @@ namespace WFInicial
         {
 
         }
+
+        private void btn_Calcular_Click(object sender, EventArgs e)
+        {
+            int num1 = int.Parse(txt_numero1.Text);
+            int num2 = int.Parse(txt_numero2.Text);
+            int num3 = int.Parse(txt_numero3.Text);
+
+            int maior = Math.Max(num1, num2);
+            maior = Math.Max(maior, num3);
+
+            string mesagem = $"O numero {maior} é o maior valor!";
+
+            MessageBox.Show(mesagem, "Info",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
