@@ -29,12 +29,19 @@ namespace WFInicial
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string nome = txt_nome.Text;
+            double horas = Convert.ToDouble(txt_horas.Text);
+            double mes = Convert.ToDouble(txt_mes.Text);
 
+            double resultado = horas * mes;
+
+            MessageBox.Show($"A renda do {nome} é R${resultado:F2}", "info",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

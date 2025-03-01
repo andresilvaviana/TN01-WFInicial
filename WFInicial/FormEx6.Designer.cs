@@ -81,7 +81,7 @@
             lbl_horas.Size = new Size(97, 15);
             lbl_horas.TabIndex = 3;
             lbl_horas.Text = "Ganho por Horas";
-            lbl_horas.Click += this.label1_Click;
+            
             // 
             // txt_mes
             // 
