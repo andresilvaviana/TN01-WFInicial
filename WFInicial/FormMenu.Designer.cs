@@ -36,6 +36,8 @@
             btn_ex6 = new Button();
             btn_5 = new Button();
             btn_ex8 = new Button();
+            btn_ex9 = new Button();
+            btn_ex10 = new Button();
             SuspendLayout();
             // 
             // btn_x1
@@ -118,11 +120,33 @@
             btn_ex8.UseVisualStyleBackColor = true;
             btn_ex8.Click += btn_ex8_Click;
             // 
+            // btn_ex9
+            // 
+            btn_ex9.Location = new Point(26, 90);
+            btn_ex9.Name = "btn_ex9";
+            btn_ex9.Size = new Size(75, 23);
+            btn_ex9.TabIndex = 8;
+            btn_ex9.Text = "exercicio 9";
+            btn_ex9.UseVisualStyleBackColor = true;
+            btn_ex9.Click += btn_ex9_Click;
+            // 
+            // btn_ex10
+            // 
+            btn_ex10.Location = new Point(107, 90);
+            btn_ex10.Name = "btn_ex10";
+            btn_ex10.Size = new Size(84, 23);
+            btn_ex10.TabIndex = 9;
+            btn_ex10.Text = "exercicio 10";
+            btn_ex10.UseVisualStyleBackColor = true;
+            btn_ex10.Click += btn_ex10_Click;
+            // 
             // FormMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btn_ex10);
+            Controls.Add(btn_ex9);
             Controls.Add(btn_ex8);
             Controls.Add(btn_ex7);
             Controls.Add(btn_ex6);
@@ -146,5 +170,7 @@
         private Button btn_ex6;
         private Button btn_5;
         private Button btn_ex8;
+        private Button btn_ex9;
+        private Button btn_ex10;
     }
 }
