@@ -69,6 +69,7 @@
             Controls.Add(txt_resultado);
             Name = "FormEx10";
             Text = "FormEx10";
+            Leave += FormEx10_Leave;
             ResumeLayout(false);
             PerformLayout();
         }

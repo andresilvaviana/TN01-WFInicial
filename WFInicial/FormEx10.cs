@@ -27,11 +27,16 @@ namespace WFInicial
             int numero = Convert.ToInt32(txt_numero.Text);
             string? tabuada = "";
 
-            for(int i = 1; i < 10; i++)
+            for (int i = 1; i < 10; i++)
             {
                 tabuada = tabuada + $"{numero} x {i} = {numero * i}\r\n";
             }
             txt_resultado.Text = tabuada;
+
+        }
+
+        private void FormEx10_Leave(object sender, EventArgs e)
+        {
 
         }
     }
